@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Modul 2 </title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px; 
+        }
+        textarea {
+            width: calc(100% - 150px); 
+            vertical-align: top; 
+            width: 177px;
+            height: 68px;
+        }
+        fieldset {
+            border: 1px solid black; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+        }
+        input[type="url"] {
+            width: 300px; 
+        }
+        .info-akun, .kemampuan-dasar {
+            border: 1px solid black; 
+            padding: 20px; 
+            margin-top: 20px; 
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Registrasi</h2>
+    <fieldset>
+        <legend>Biodata</legend> <!-- Judul garis kotak -->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="nama">Nama Mahasiswa:</label> <input type="text" id="nama" name="nama"><br><br>
+            
+            <label for="no_induk">No Indux Mahasiswa :</label> <input type="text" id="no_induk" name="no_induk"><br><br>
+            
+            <label for="alamat">Alamat Mahasiswa :</label> <textarea name="alamat" id="alamat" required style="width: 177px; height: 68px;"></textarea><br><br>
+            
+            <label for="tgl_lahir">Tanggal Lahir :</label> 
+            <select name="Tanggal" id="Tanggal">
+                <option value="Tanggal">28</option>
+                <option value="Tanggal">2</option>
+            </select>
+            <select name="bulan" id="bulan">
+                <option value="bulan">Januari</option>
+                <option value="bulan">Februari</option>
+                <option value="bulan">Maret</option>
+                <option value="bulan">April</option>
+                <option value="bulan">Mei</option>
+                <option value="bulan">Juni</option>
+                <option value="bulan">Juli</option>
+                <option value="bulan">Agustus</option>
+                <option value="bulan">September</option>
+                <option value="bulan">Oktober</option>
+                <option value="bulan">November</option>
+                <option value="bulan">Desember</option>
+            </select>
+            <select name="Tahun" id="Tahun">
+                <option value="years">2002</option>
+                <option value="years">2003</option>
+            </select><br>
+            
+            <label for="jenis_kelamin">Jenis Kelamin :</label>
+            <input type="radio" id="male" name="jenis_kelamin" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="jenis_kelamin" value="female">
+            <label for="female">Female</label><br><br>
+            
+            <label for="foto">Upload foto :</label> <input type="file" id="foto" name="foto"><br><br>
+            
+            <label for="url_website">URL Website :</label> <input type="url" id="url_website" name="url_website" style="width: 300px;"><br><br>
+            
+            <label for="perguruan_tinggi">Perguruan Tinggi :</label> <input type="text" id="perguruan_tinggi" name="perguruan_tinggi"><br><br>
+            
+        </form>
+    </fieldset>
+    
+    <fieldset class="info-akun">
+        <legend>Info Akun</legend> <!-- Judul garis kotak -->
+        <label for="email">Email :</label> <input type="email" id="email" name="email"><br><br>
+        <label for="username">Username :</label> <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password :</label> <input type="password" id="password" name="password"><br><br>
+        <label for="ulangi_password">Ulangi Password :</label> <input type="password" id="ulangi_password" name="ulangi_password"><br><br>
+    </fieldset>
+    <fieldset class="kemampuan-dasar">
+        <legend>Kemampuan Dasar</legend> <!-- Judul garis kotak -->
+        <form action="#" method="post">
+            <label for="html"><input type="checkbox" id="html" name="html"> HTML</label>
+            <label for="css"><input type="checkbox" id="css" name="css"> CSS</label>
+            <label for="javascript"><input type="checkbox" id="javascript" name="javascript"> Javascript</label>
+            <label for="php"><input type="checkbox" id="php" name="php"> PHP</label>
+            <label for="mysql"><input type="checkbox" id="mysql" name="mysql"> MySQL</label>
+            <label for="laravel"><input type="checkbox" id="laravel" name="laravel"> Laravel</label>
+            <label for="react_native"><input type="checkbox" id="react_native" name="react_native"> React Native    </label>
+        </form>
+    </fieldset>
+    <div class="buttons">
+        <button type="reset">Reset</button>
+        <button type="submit">Simpan</button>
+        <button type="button">Button</button>
+    </div>
+</body>
+</html>
